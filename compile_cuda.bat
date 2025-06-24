@@ -35,16 +35,16 @@ if not exist "build" (
 
 echo Setting up Visual Studio environment and compiling...
 call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
-nvcc code/test.cu -o build/test.exe -I "opencv_prebuilt/build/include" -L "opencv_prebuilt/build/x64/vc16/lib" -lopencv_world480 --std=c++14 -w --diag-suppress=611
+nvcc code/box_filter.cu -o build/box_filter.exe -I "opencv_prebuilt/build/include" -L "opencv_prebuilt/build/x64/vc16/lib" -lopencv_world480 --std=c++14 -w --diag-suppress=611
 
 if %ERRORLEVEL% EQU 0 (
     echo.
-    echo ✅ SUCCESS! Your test.exe is ready in the build directory.
+    echo ✅ SUCCESS! Your box_filter.exe is ready in the build directory.
     echo.
     echo Copying OpenCV DLL to build directory...
     copy "opencv_prebuilt\build\x64\vc16\bin\opencv_world480.dll" build\ >nul 2>&1
     echo.
-    echo To run: cd build && test.exe
+    echo To run: "cd build && box_filter.exe"
     echo.
 ) else (
     echo.

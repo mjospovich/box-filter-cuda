@@ -33,3 +33,4 @@
 
 # Custom
 /opencv_prebuilt
+*.exp
