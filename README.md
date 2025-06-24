@@ -54,6 +54,12 @@ The box filter smooths images by replacing each pixel with the average of its su
 - **Efficiency**: GPU excels at parallel pixel processing
 - **Scalability**: Performance advantage increases with image size
 
+### Performance Visualization
+
+![Performance Analysis](results/performance_analysis.png)
+
+The charts above clearly demonstrate the dramatic performance improvement achieved by GPU acceleration. Note how larger images (shown with dimensions) benefit more from parallelization, with the 200MP sample achieving the highest speedup factors.
+
 ## Quick Start
 
 ### Prerequisites
