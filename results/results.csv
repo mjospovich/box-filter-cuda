@@ -1,0 +1,7 @@
+image_name, image_dimensions, num_of_channels, cpu_time(ms), gpu_time(ms), speedup
+"200MP_sample.jpg", "12240x16320", 3, 499.449, 28.739, 17.380
+"200MP_sample.jpg", "12240x16320", 1, 168.988, 10.568, 15.992
+"drone_shot.jpg", "3000x4000", 3, 30.54, 1.799, 16.967
+"drone_shot.jpg", "3000x4000", 1, 10.927, 0.606, 18.031
+"car_window.jpg", "5204x9248", 3, 121.831, 7.349, 16.578
+"car_window.jpg", "5204x9248", 1, 40.629, 3.04, 13.364
