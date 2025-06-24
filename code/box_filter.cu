@@ -140,15 +140,16 @@ void processImage(const cv::Mat& image, const std::string& imageName, int kernel
 }
 
 int main() {
-    std::string imagePath = "../assets/image.jpg";
-    std::cout << "\nUčitavanje slike: " << imagePath << std::endl;
+    std::string imagePath = "../assets/drone_shot.jpg";
+    std::cout << "\nUcitavanje slike: " << imagePath << std::endl;
     cv::Mat image = cv::imread(imagePath, cv::IMREAD_COLOR);
 
     if (image.empty()) {
-        std::cerr << "Greška: Slika se ne može učitati.\n";
+        std::cerr << "Greska: Slika se ne moze ucitati.\n";
         return EXIT_FAILURE;
     }
 
+    // Kernel size - 5x5 
     int kernelSize = 5;
 
     // Process color version
